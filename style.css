@@ -171,3 +171,76 @@ p {
   background: white;
   border: var(--blue) 2px solid;
 }
+
+/* Media Queries */
+/* Media query for screens 600 pixels and below (typical mobile screens) */
+@media screen and (max-width: 600px) {
+  section {
+    padding: 64px 32px;
+  }
+
+  h1 {
+    font-size: 3.5em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .contact-btn > p {
+    font-size: 1em;
+    padding: 0;
+  }
+
+  .contact-btn > i {
+    font-size: 30px;
+  }
+
+  #intro > img {
+    width: 80%;
+    height: 80%;
+    border: var(--blue) 6px solid;
+  }
+
+  .skill-item > p {
+    line-height: 0;
+  }
+}
+
+/* Media query for screens 768 pixels and below (common tablet screens) */
+@media screen and (max-width: 768px) {
+  #intro {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+}
+
+/* Media query for screens 1024 pixels and below (common small desktop screens) */
+@media screen and (max-width: 1024px) {
+  #intro {
+    flex-direction: column;
+  }
+
+  #contacts > div > h2 {
+    text-align: center;
+  }
+  #contact-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-item {
+    flex-direction: column;
+    gap: 0;
+    height: fit-content;
+    width: fit-content;
+    align-items: flex-start;
+  }
+
+  .skill-list {
+    gap: 36px;
+  }
+}
