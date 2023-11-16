@@ -1,0 +1,173 @@
+:root {
+  --blue: #64a0f9;
+  --black: #37404a;
+  --gray: #c4d5ef;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+  /* border: red 2px dashed; */
+}
+
+section {
+  min-height: 100vh;
+  padding: 96px;
+  display: flex;
+}
+
+#intro {
+  justify-content: space-between;
+}
+
+#about {
+  background: #379afd;
+  color: white;
+  text-align: center;
+}
+
+#about > div {
+  width: 80%;
+}
+
+#about > div > h2 {
+  color: white;
+}
+
+#about,
+#skills {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#intro > img {
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  border: var(--blue) 12px solid;
+}
+
+#intro > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Typography */
+h1 {
+  font-size: 8em;
+  margin: 0;
+  color: var(--blue);
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 4em;
+  margin: 0;
+  color: var(--black);
+}
+
+p {
+  font-size: 2em;
+}
+
+/* Skill */
+#skills > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-list {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.skill-item {
+  height: 60px;
+  width: 720px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skill-item > p {
+  font-weight: bold;
+}
+
+.progress-bar {
+  height: 20px;
+  width: 350px;
+  background-color: var(--gray);
+}
+
+.bar {
+  height: 100%;
+  background: var(--blue);
+}
+
+#bar-html {
+  width: 80%;
+}
+
+#bar-css {
+  width: 60%;
+}
+
+#bar-js {
+  width: 50%;
+}
+
+/* Contacts */
+#contacts,
+#contacts > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ecf2fd;
+}
+
+#contacts > div {
+  flex-direction: column;
+}
+
+#contacts > div > div {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  background: var(--blue);
+  color: white;
+  border: 0;
+  height: 60px;
+  width: fit-content;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.contact-btn > i {
+  font-size: 36px;
+}
+
+.contact-btn > p {
+  font-size: 24px;
+}
+
+.contact-btn:hover {
+  color: var(--blue);
+  background: white;
+  border: var(--blue) 2px solid;
+}
