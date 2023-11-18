@@ -7,7 +7,7 @@
 - Mengirim link netlify ke Google Forms
 
 ## Cara Upload ke Netlify
-- Masuk ke website netlify dan daftar/sign up atau log in jika sudah memiliki akun
+- Masuk ke website [Netlify](https://www.netlify.com/) dan daftar/sign up atau log in jika sudah memiliki akun
 - Pada dashboard utama, klik **Add new site** > **Deploy manually**
 
 ![Deploy manually](https://i.imgur.com/UAPwfKk.png)
